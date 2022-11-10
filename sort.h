@@ -1,10 +1,9 @@
-#ifndef /SORT_H/
-#define /SORT_H/
+#ifndef SORT_H
+#define SORT_H
 
-#include <string.h>
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -15,13 +14,14 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
-void print_array(const int *array, size_t size);
+/** provided functions */
 void print_list(const listint_t *list);
+void print_array(const int *array, size_t size);
 
 /** 0 */
 void bubble_sort(int *array, size_t size);
@@ -73,5 +73,4 @@ void b_merge(int *array, int low, int count, int dir, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 int partition_hoare(int *a, int l, int h);
 
-
-#endif /SORT_H/
+#endif
