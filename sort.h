@@ -71,6 +71,5 @@ void b_merge(int *array, int low, int count, int dir, size_t size);
 
 /** 11 */
 void quick_sort_hoare(int *array, size_t size);
-int partition_hoare(int *a, int l, int h);
 
 #endif
